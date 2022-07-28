@@ -1,0 +1,303 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+}
+
+body {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #FF4500;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  min-width: 100%;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #FFFFFF;
+}
+
+::-webkit-scrollbar {
+  width: 0.75vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0C0C0C;
+}
+
+/* Medium Device = 1200px */
+/* Tablet Device = 768px */
+/* Wide Mobile = 480px */
+header {
+  background-color: #EDFAC9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 35px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+
+header .scroll1 {
+  height: 100%;
+}
+
+header .scroll1 .marqueeText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  font-size: 16px;
+  padding: 0;
+  color: #FF4500;
+  font-family: 'Franklin Gothic Heavy';
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  padding-right: 40px;
+}
+
+header .scroll1 .marqueeText a {
+  color: #3A0000;
+  margin: 0 5px;
+}
+
+header .scroll1 .marqueeText img {
+  position: absolute;
+  width: 20px;
+  height: 15px;
+  right: 15px;
+  top: 5px;
+}
+
+header .scroll1 .blue {
+  color: #36B7FF;
+}
+
+.containerVetor {
+  width: 100%;
+  height: 100vh;
+}
+
+.containerVetor .block_vetor {
+  border: 10px solid #EDFAC9;
+  border-radius: 25px;
+  width: 35vw;
+  height: 75vh;
+  padding: 10px 0;
+  margin: 20px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 7vh;
+  left: auto;
+}
+
+.containerVetor .block_vetor .title {
+  font-family: 'Franklin Gothic Heavy';
+  color: #EDFAC9;
+  font-weight: 900;
+  font-size: 3.2vw;
+  padding: 0;
+  margin: 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.containerVetor .block_vetor .title p {
+  padding: 0;
+  margin: 0;
+}
+
+.containerVetor .block_vetor .title span {
+  margin-top: -30px;
+}
+
+.containerVetor .block_vetor img {
+  width: 70%;
+  margin: 20px 0 30px 0;
+}
+
+.containerVetor .block_vetor .Links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 15px;
+}
+
+.containerVetor .block_vetor .Links li {
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  list-style: none;
+}
+
+.containerVetor .block_vetor .Links li .link {
+  font-family: 'Franklin Gothic';
+  font-style: normal;
+  font-weight: 600;
+  line-height: 41px;
+  letter-spacing: -0.06em;
+  font-size: 1.4vw;
+  color: #05e478;
+}
+
+.containerVetor .block_vetor .Links li .darkRed {
+  color: #3A0000;
+}
+
+.projetos {
+  background-color: #EDFAC9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100px;
+  top: 5px;
+  z-index: 10;
+}
+
+.projetos .scroll {
+  height: 100%;
+}
+
+.projetos .scroll .marqueeText {
+  padding: 0 20px;
+  color: #FF4500;
+  font-family: 'Franklin Gothic Heavy';
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  font-size: 5vw;
+}
+
+.projetos .scroll .blue {
+  color: #36B7FF;
+}
+
+.fixed {
+  position: fixed !important;
+  top: 0;
+}
+
+.blockImgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 99vw;
+  padding: 0.5vw;
+  margin-top: 1vh;
+}
+
+.blockImgs .ColunaImgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20%;
+  padding: 5px;
+  margin-top: 10vh;
+}
+
+.blockImgs .ColunaImgs a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  padding: 1vh 0;
+  margin: 1vh 0;
+}
+
+.blockImgs .ColunaImgs a img {
+  position: relative;
+  width: 90%;
+  mix-blend-mode: darken;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.blockImgs .ColunaImgs a .first {
+  z-index: 3;
+  top: 1.5vh;
+  left: 1vw;
+}
+
+.blockImgs .ColunaImgs a .second {
+  position: absolute;
+}
+
+.blockImgs .ColunaImgs a .third {
+  top: -0.2vh;
+  left: 0;
+  position: absolute;
+}
+
+.blockImgs .ColunaImgs a:hover img {
+  mix-blend-mode: normal;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+.blockImgs .Conteudo {
+  width: 60%;
+  border: green 2px solid;
+  margin-top: 10vh;
+}
+
+.imgs {
+  margin-top: 16vh;
+}
+/*# sourceMappingURL=style.css.map */
