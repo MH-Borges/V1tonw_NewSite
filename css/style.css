@@ -241,7 +241,7 @@ header .scroll1 .blue {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 20%;
+  width: 20vw;
   padding: 5px;
   margin-top: 10vh;
 }
@@ -292,9 +292,76 @@ header .scroll1 .blue {
 }
 
 .blockImgs .Conteudo {
-  width: 60%;
-  border: green 2px solid;
+  width: 60vw;
   margin-top: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 10px;
+}
+
+.blockImgs .Conteudo .mainPhoto {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1vw 0;
+}
+
+.blockImgs .Conteudo .mainPhoto img {
+  width: 45vw;
+}
+
+.blockImgs .Conteudo .mainText {
+  padding: 1vw;
+  padding-bottom: 0;
+  margin: 1vw 0;
+}
+
+.blockImgs .Conteudo .mainText p {
+  color: white;
+  font-family: 'Arial';
+  font-style: normal;
+}
+
+.blockImgs .Conteudo .galery {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.blockImgs .Conteudo .galery .imgBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1vw;
+  width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.blockImgs .Conteudo .galery .imgBlock img {
+  width: 100%;
+  height: auto;
 }
 
 .imgs {
