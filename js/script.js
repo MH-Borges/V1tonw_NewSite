@@ -21,8 +21,6 @@ window.onload = function(){
 
     }
    
-    console.log(window.scrollY);
-
     window.addEventListener('scroll',() => {
         if(window.scrollY < 669){
             document.querySelector('.projetos').classList.remove('fixed');
