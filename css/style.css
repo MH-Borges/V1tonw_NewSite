@@ -241,7 +241,7 @@ header .scroll1 .blue {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 20vw;
+  width: 15vw;
   padding: 5px;
   margin-top: 10vh;
 }
@@ -292,7 +292,7 @@ header .scroll1 .blue {
 }
 
 .blockImgs .Conteudo {
-  width: 60vw;
+  width: 70vw;
   margin-top: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -302,7 +302,9 @@ header .scroll1 .blue {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .blockImgs .Conteudo .mainPhoto {
@@ -317,7 +319,7 @@ header .scroll1 .blue {
 }
 
 .blockImgs .Conteudo .mainPhoto img {
-  width: 45vw;
+  width: 95%;
 }
 
 .blockImgs .Conteudo .mainText {
@@ -362,6 +364,15 @@ header .scroll1 .blue {
 .blockImgs .Conteudo .galery .imgBlock img {
   width: 100%;
   height: auto;
+}
+
+.blockImgs .Conteudo .FichaTecnica {
+  position: absolute;
+  background-color: #EDFAC9;
+  width: 99.35vw;
+  height: 85vh;
+  bottom: -90vh;
+  left: -0.2vw;
 }
 
 .imgs {
