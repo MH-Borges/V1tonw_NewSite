@@ -52,14 +52,14 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 1;
+  z-index: 10;
 }
 
-header .scroll1 {
+header .scroll {
   height: 100%;
 }
 
-header .scroll1 .marqueeText {
+header .scroll .marqueeText {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,12 +74,16 @@ header .scroll1 .marqueeText {
   padding-right: 40px;
 }
 
-header .scroll1 .marqueeText a {
+header .scroll .marqueeText .mainLink {
   color: #3A0000;
   margin: 0 5px;
 }
 
-header .scroll1 .marqueeText img {
+header .scroll .marqueeText a {
+  color: #FF4500;
+}
+
+header .scroll .marqueeText img {
   position: absolute;
   width: 20px;
   height: 15px;
@@ -87,7 +91,11 @@ header .scroll1 .marqueeText img {
   top: 5px;
 }
 
-header .scroll1 .blue {
+header .scroll .blue {
+  color: #36B7FF;
+}
+
+header .scroll .blue a {
   color: #36B7FF;
 }
 
@@ -190,17 +198,16 @@ header .scroll1 .blue {
   display: flex;
   position: relative;
   width: 100%;
-  height: 100px;
-  top: 5px;
+  height: 80px;
   z-index: 10;
 }
 
-.projetos .scroll {
+.projetos .scroll1 {
   height: 100%;
 }
 
-.projetos .scroll .marqueeText {
-  padding: 0 20px;
+.projetos .scroll1 .marqueeText {
+  padding: 0 0.75vw;
   color: #FF4500;
   font-family: 'Franklin Gothic Heavy';
   font-style: normal;
@@ -209,13 +216,13 @@ header .scroll1 .blue {
   font-size: 5vw;
 }
 
-.projetos .scroll .blue {
+.projetos .scroll1 .blue {
   color: #36B7FF;
 }
 
 .fixed {
   position: fixed !important;
-  top: 0;
+  top: 35px;
 }
 
 .blockImgs {
@@ -229,7 +236,6 @@ header .scroll1 .blue {
           flex-direction: row;
   width: 99vw;
   padding: 0.5vw;
-  margin-top: 1vh;
 }
 
 .blockImgs .ColunaImgs {
@@ -243,7 +249,7 @@ header .scroll1 .blue {
           flex-direction: column;
   width: 15vw;
   padding: 5px;
-  margin-top: 10vh;
+  margin-top: 7vh;
 }
 
 .blockImgs .ColunaImgs a {
@@ -293,7 +299,7 @@ header .scroll1 .blue {
 
 .blockImgs .Conteudo {
   width: 70vw;
-  margin-top: 10vh;
+  margin-top: 7vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -305,6 +311,10 @@ header .scroll1 .blue {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.blockImgs .Conteudo h1 {
+  display: none;
 }
 
 .blockImgs .Conteudo .mainPhoto {
@@ -370,12 +380,44 @@ header .scroll1 .blue {
   position: absolute;
   background-color: #EDFAC9;
   width: 99.35vw;
-  height: 85vh;
-  bottom: -90vh;
+  height: 83vh;
+  bottom: -100vh;
   left: -0.2vw;
 }
 
 .imgs {
-  margin-top: 16vh;
+  margin-top: 12vh;
+}
+
+.ficha {
+  background-color: #EDFAC9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 115px;
+  z-index: 11;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.ficha .scroll2 {
+  height: 100%;
+}
+
+.ficha .scroll2 .marqueeText {
+  padding: 0 0.75vw;
+  color: #FF4500;
+  font-family: 'Franklin Gothic Heavy';
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  font-size: 5vw;
+}
+
+.ficha .scroll2 .blue {
+  color: #36B7FF;
 }
 /*# sourceMappingURL=style.css.map */
