@@ -198,7 +198,7 @@ header .scroll .blue a {
   display: flex;
   position: relative;
   width: 100%;
-  height: 80px;
+  height: 10vh;
   z-index: 10;
 }
 
@@ -342,6 +342,7 @@ header .scroll .blue a {
   color: white;
   font-family: 'Arial';
   font-style: normal;
+  font-size: 1vw;
 }
 
 .blockImgs .Conteudo .galery {
@@ -378,11 +379,90 @@ header .scroll .blue a {
 
 .blockImgs .Conteudo .FichaTecnica {
   position: absolute;
-  background-color: #EDFAC9;
   width: 99.35vw;
-  height: 83vh;
-  bottom: -100vh;
+  height: 100vh;
   left: -0.2vw;
+  background-color: #EDFAC9;
+  padding-top: 14vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blockImgs .Conteudo .FichaTecnica .carouselBlock {
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blockImgs .Conteudo .FichaTecnica .carouselBlock .carousel {
+  margin-top: 13vh;
+  margin-left: auto;
+}
+
+.blockImgs .Conteudo .FichaTecnica .carouselBlock .carousel .carousel-inner .carousel-item img {
+  width: 20vw;
+  height: 45vh;
+}
+
+.blockImgs .Conteudo .FichaTecnica .infosFicha {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blockImgs .Conteudo .FichaTecnica .infosFicha .infoLinksMargin {
+  margin-top: 13vh;
+}
+
+.blockImgs .Conteudo .FichaTecnica .infosFicha .infoLinks {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blockImgs .Conteudo .FichaTecnica .infosFicha .infoLinks a {
+  width: 50%;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1vw;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #FF4500;
+  padding: 1vh 0;
+  margin-left: 8vw;
+}
+
+.blockImgs .Conteudo .FichaTecnica .infosFicha .infoLinks h4 {
+  width: 50%;
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1vw;
+  color: #FF4500;
+  margin: 0;
+  padding: 1.5vh 0;
+}
+
+.blockImgs .Conteudo .FichaTecnica .infosFicha .blue a {
+  color: #36B7FF;
+}
+
+.blockImgs .Conteudo .FichaTecnica .infosFicha .blue h4 {
+  color: #36B7FF;
 }
 
 .imgs {
@@ -396,11 +476,12 @@ header .scroll .blue a {
   display: flex;
   position: relative;
   width: 100%;
-  height: 115px;
+  height: 14vh;
   z-index: 11;
   opacity: 0;
   position: absolute;
-  bottom: 0;
+  margin-top: -1vh;
+  padding: 0;
 }
 
 .ficha .scroll2 {

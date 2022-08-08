@@ -150,7 +150,7 @@ header{
     display: flex;
     position: relative;
     width: 100%;
-    height: 80px;
+    height: 10vh;
     z-index: 10;
     .scroll1{
         height: 100%;
@@ -252,6 +252,7 @@ header{
                 color: white;   
                 font-family: 'Arial';
                 font-style: normal;
+                font-size: 1vw;
             }
         }
         .galery{
@@ -275,11 +276,73 @@ header{
         }
         .FichaTecnica{
             position: absolute;
-            background-color: #EDFAC9;
             width: 99.35vw;
-            height: 83vh;
-            bottom: -100vh;
+            height: 100vh;
             left: -0.2vw;
+            background-color: #EDFAC9;
+            padding-top: 14vh;
+            display: flex;
+            .carouselBlock{
+                width: 40%;
+                height: 100%;
+                display: flex;
+                .carousel{
+                    margin-top: 13vh;
+                    margin-left: auto;
+                    .carousel-inner{
+                        .carousel-item{
+                            img{
+                                width: 20vw;
+                                height: 45vh;       
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .infosFicha{
+                width: 60%;
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                .infoLinksMargin{
+                    margin-top: 13vh;
+                }
+                .infoLinks{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    a{
+                        width: 50%;
+                        font-family: 'Arial';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 1vw;
+                        text-decoration-line: underline;
+                        color: #FF4500;
+                        padding: 1vh 0;
+                        margin-left: 8vw;
+                    }
+                    h4{
+                        width: 50%;
+                        font-family: 'Arial';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 1vw;
+                        color: #FF4500;
+                        margin: 0;
+                        padding: 1.5vh 0;
+                    }
+                }
+                .blue{
+                    a{
+                        color: #36B7FF;
+                    }
+                    h4{
+                        color: #36B7FF;
+                    }
+                }
+            }
         }
     }
 }
@@ -293,11 +356,12 @@ header{
     display: flex;
     position: relative;
     width: 100%;
-    height: 115px;
+    height: 14vh;
     z-index: 11;
     opacity: 0;
     position: absolute;
-    bottom: 0;
+    margin-top: -1vh;
+    padding: 0;
     .scroll2{
         height: 100%;
         .marqueeText {

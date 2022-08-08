@@ -8,6 +8,8 @@ window.onload = function(){
     if(colorArray[random] == '#FF4500'){
         const texts = document.querySelectorAll('.marqueeText');
         for (const text of texts) { text.classList.remove('blue'); }
+        const fichas = document.querySelectorAll('.infoLinks');
+        for (const ficha of fichas) { ficha.classList.remove('blue'); }
     }
     else{
         const texts = document.querySelectorAll('.marqueeText');
@@ -15,6 +17,9 @@ window.onload = function(){
 
         const links = document.querySelectorAll('.link');
         for (const link of links) { link.classList.add('darkRed'); }
+
+        const fichas = document.querySelectorAll('.infoLinks');
+        for (const ficha of fichas) { ficha.classList.add('blue'); }
     }
 }
 
@@ -65,6 +70,7 @@ function clickPhoto() {
 
 $(function () {
     $('.scroll').infiniteslide({
+        speed: 50
     });
 
     $('.scroll1').infiniteslide({
