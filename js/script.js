@@ -50,14 +50,14 @@ function clickPhoto() {
     let i = 0;
 
     if(colorArray[random] == '#36B7FF'){
-        while (i < 4) {
+        while (i < 5) {
             text += `<li class='marqueeText project blue' style="flex: 0 0 auto; display: block;"> ${ nomeProjeto } </li>`;
             text2 += `<li class='marqueeText project infiniteslide_clone blue' style="flex: 0 0 auto; display: block;"> ${ nomeProjeto } </li>`;
             
             i++;
             }
     }else{
-        while (i < 4) {
+        while (i < 5) {
         text += `<li class='marqueeText project' style="flex: 0 0 auto; display: block;"> ${ nomeProjeto } </li>`;
         text2 += `<li class='marqueeText project infiniteslide_clone' style="flex: 0 0 auto; display: block;"> ${ nomeProjeto } </li>`;
         

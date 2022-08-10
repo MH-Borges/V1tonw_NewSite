@@ -66,7 +66,7 @@ header{
                 position: absolute;
                 width: 20px;
                 height: 15px;
-                right: 15px;
+                right: 10px;
                 top: 5px;
             }
         }
@@ -187,7 +187,6 @@ header{
         flex-direction: column;
         width: 15vw;
         margin-top: 7vh;
-        border: 2px solid blue;
         a{
             display: flex;
             align-items: center;
@@ -225,13 +224,13 @@ header{
         }
     }
     .Conteudo{
-        border: 2px solid yellowgreen;
         width: 70vw;
         margin-top: 7vh;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        padding-bottom: 5vh;
         h1{
             display: none;
         }

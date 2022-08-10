@@ -87,7 +87,7 @@ header .scroll .marqueeText img {
   position: absolute;
   width: 20px;
   height: 15px;
-  right: 15px;
+  right: 10px;
   top: 5px;
 }
 
@@ -249,7 +249,6 @@ header .scroll .blue a {
           flex-direction: column;
   width: 15vw;
   margin-top: 7vh;
-  border: 2px solid blue;
 }
 
 .blockImgs .ColunaImgs a {
@@ -297,7 +296,6 @@ header .scroll .blue a {
 }
 
 .blockImgs .Conteudo {
-  border: 2px solid yellowgreen;
   width: 70vw;
   margin-top: 7vh;
   display: -webkit-box;
@@ -311,6 +309,7 @@ header .scroll .blue a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 5vh;
 }
 
 .blockImgs .Conteudo h1 {
