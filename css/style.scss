@@ -186,15 +186,14 @@ header{
         position: relative;
         flex-direction: column;
         width: 15vw;
-        padding: 5px;
         margin-top: 7vh;
+        border: 2px solid blue;
         a{
             display: flex;
             align-items: center;
             justify-content: center;
             position: relative;
-            padding: 1vh 0;
-            margin: 1vh 0;
+            padding:0 0 5vh 0;
             img{
                 position: relative;
                 width: 90%;
@@ -205,13 +204,13 @@ header{
             .first{
                 z-index: 3;
                 top: 1.5vh;
-                left: 1vw;
+                left: 0.8vw;
             }
             .second{
                 position: absolute;
             }
             .third{
-                top: -0.2vh;
+                top: -1.5vh;
                 left: 0;
                 position: absolute;
             }
@@ -226,6 +225,7 @@ header{
         }
     }
     .Conteudo{
+        border: 2px solid yellowgreen;
         width: 70vw;
         margin-top: 7vh;
         display: flex;
@@ -249,7 +249,7 @@ header{
             padding-bottom: 0;
             margin: 1vw 0;
             p{
-                color: white;   
+                color: #EDFAC9;   
                 font-family: 'Arial';
                 font-style: normal;
                 font-size: 1vw;
@@ -286,14 +286,18 @@ header{
                 width: 40%;
                 height: 100%;
                 display: flex;
+                justify-content: center;
+                align-items: center; 
                 .carousel{
-                    margin-top: 13vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
                     margin-left: auto;
                     .carousel-inner{
                         .carousel-item{
                             img{
                                 width: 20vw;
-                                height: 45vh;       
                             }
                         }
                     }
@@ -305,13 +309,10 @@ header{
                 display: flex;
                 position: relative;
                 flex-direction: column;
-                .infoLinksMargin{
-                    margin-top: 13vh;
-                }
+                justify-content: center;
                 .infoLinks{
                     width: 100%;
                     display: flex;
-                    align-items: center;
                     a{
                         width: 50%;
                         font-family: 'Arial';

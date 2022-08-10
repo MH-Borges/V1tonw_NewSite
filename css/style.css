@@ -248,8 +248,8 @@ header .scroll .blue a {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 15vw;
-  padding: 5px;
   margin-top: 7vh;
+  border: 2px solid blue;
 }
 
 .blockImgs .ColunaImgs a {
@@ -263,8 +263,7 @@ header .scroll .blue a {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  padding: 1vh 0;
-  margin: 1vh 0;
+  padding: 0 0 5vh 0;
 }
 
 .blockImgs .ColunaImgs a img {
@@ -278,7 +277,7 @@ header .scroll .blue a {
 .blockImgs .ColunaImgs a .first {
   z-index: 3;
   top: 1.5vh;
-  left: 1vw;
+  left: 0.8vw;
 }
 
 .blockImgs .ColunaImgs a .second {
@@ -286,7 +285,7 @@ header .scroll .blue a {
 }
 
 .blockImgs .ColunaImgs a .third {
-  top: -0.2vh;
+  top: -1.5vh;
   left: 0;
   position: absolute;
 }
@@ -298,6 +297,7 @@ header .scroll .blue a {
 }
 
 .blockImgs .Conteudo {
+  border: 2px solid yellowgreen;
   width: 70vw;
   margin-top: 7vh;
   display: -webkit-box;
@@ -339,7 +339,7 @@ header .scroll .blue a {
 }
 
 .blockImgs .Conteudo .mainText p {
-  color: white;
+  color: #EDFAC9;
   font-family: 'Arial';
   font-style: normal;
   font-size: 1vw;
@@ -395,16 +395,30 @@ header .scroll .blue a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .blockImgs .Conteudo .FichaTecnica .carouselBlock .carousel {
-  margin-top: 13vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
   margin-left: auto;
 }
 
 .blockImgs .Conteudo .FichaTecnica .carouselBlock .carousel .carousel-inner .carousel-item img {
   width: 20vw;
-  height: 45vh;
 }
 
 .blockImgs .Conteudo .FichaTecnica .infosFicha {
@@ -417,10 +431,9 @@ header .scroll .blue a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.blockImgs .Conteudo .FichaTecnica .infosFicha .infoLinksMargin {
-  margin-top: 13vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .blockImgs .Conteudo .FichaTecnica .infosFicha .infoLinks {
@@ -428,9 +441,6 @@ header .scroll .blue a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .blockImgs .Conteudo .FichaTecnica .infosFicha .infoLinks a {
