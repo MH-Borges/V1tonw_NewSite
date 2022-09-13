@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="MH Borges || https://mhborges.com.br">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Home">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+    
+    <title>V1town</title>
+    <link rel="icon" href="../img/logo.png"/>
+    
+    <!-- font awesome para icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <!-- JQUERY linkagem -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="../css/style.css">
+
+	<script src="../js/infiniteslidev2.min.js"></script>
+    <script src="../js/script.js"></script>
+
+</head>
+
+
+<body>
+
+    <div class="formBody">
+        <form>
+            <h2>Area Administrativa</h2>
+
+            <div class="form-field">
+                <label>Email</label>
+                <input type="email" name="email" id="email" placeholder="seu@email.com" onchange="onChangeEmail()"/>
+                <span id="emailRequired">Email é obrigatório</span>
+                <span id="emailInvalid">Email inválido</span>
+            </div>
+            <div class="form-field">
+                <label>Senha</label>
+                <input type="password" name="password" id="password" placeholder="Senha" onchange="onChangePassword()"/>
+                <span id="passwordRequired">Senha é obrigatória</span>
+            </div>
+            <button type="button" class="recuperar" id="recoverPass" >Recuperar senha</button>
+            <button type="button" class="entrar" id="loginBt" disabled="true" >Entrar</button>
+        </form>
+    </div>
+
+    <script type="module" src="../js/firebase.js"></script>
+    <script type="module" src="../js/firebase-login.js"></script>
+
+    <script src="../js/login.js"></script>
+    
+</body>
+</html>

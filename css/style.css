@@ -24,7 +24,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #FFFFFF;
+  background-color: #EDFAC9;
 }
 
 ::-webkit-scrollbar {
@@ -33,6 +33,466 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background: #0C0C0C;
+}
+
+.formBody {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formBody form {
+  border-radius: 1vw;
+  border: 1px solid darkgray;
+  padding: 2.5vw;
+  width: 32vw;
+  background-color: #EDFAC9;
+}
+
+.formBody form .form-field {
+  margin-bottom: 1vw;
+}
+
+.formBody form .form-field label {
+  font-weight: 700;
+}
+
+.formBody form .form-field span {
+  background: red;
+  color: white;
+  display: none;
+  padding: 0.5vw;
+  text-align: center;
+}
+
+.formBody form input,
+.formBody form button {
+  cursor: pointer;
+  padding: 10px;
+  width: -webkit-fill-available;
+  border: none;
+  border-radius: 1vw;
+}
+
+.formBody form .confirm[disabled] {
+  border: 2px solid lightgray;
+  color: gray;
+}
+
+.formBody form .confirm {
+  margin-top: 1vw;
+  margin-left: 14vw;
+  width: 50%;
+  background: none;
+  border: 2px solid greenyellow;
+  color: green;
+  font-weight: 700;
+  border-radius: 1vw;
+}
+
+.formBody {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formBody form {
+  border-radius: 1vw;
+  border: 1px solid darkgray;
+  padding: 2.5vw;
+  width: 32vw;
+  background-color: #EDFAC9;
+}
+
+.formBody form h2 {
+  text-align: center;
+  margin-bottom: 2vh;
+}
+
+.formBody form .form-field {
+  margin-bottom: 1vw;
+}
+
+.formBody form .form-field label {
+  font-weight: 700;
+}
+
+.formBody form .form-field span {
+  background: red;
+  color: white;
+  display: none;
+  padding: 0.5vw;
+  text-align: center;
+}
+
+.formBody form input,
+.formBody form button {
+  cursor: pointer;
+  padding: 10px;
+  width: -webkit-fill-available;
+  border: none;
+  border-radius: 1vw;
+}
+
+.formBody form .entrar[disabled] {
+  border: 2px solid lightgray;
+  color: gray;
+  background: none;
+}
+
+.formBody form .entrar {
+  margin-top: 1vw;
+  background: green;
+  border: 2px solid green;
+  color: white;
+  font-weight: 700;
+  border-radius: 1vw;
+}
+
+.formBody form .recuperar {
+  color: black;
+  padding: 0;
+  width: 10vw;
+  margin-left: 65%;
+  background: none;
+}
+
+.formBody form .recuperar:hover {
+  font-weight: 600;
+}
+
+.blockBody {
+  background-color: #EDFAC9;
+  width: 75vw;
+  min-height: 100vh;
+  height: 100%;
+  border-radius: 1vw 1vw 0 0;
+  -webkit-box-shadow: 0 0 5px #3d3d3d;
+          box-shadow: 0 0 5px #3d3d3d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blockBody .logout {
+  bottom: 1vw;
+  right: 1vw;
+  border: 1px solid darkgray;
+  background-color: red;
+  position: absolute;
+  padding: 0.5vw;
+  border-radius: 1vw;
+  color: white;
+  font-weight: 700;
+}
+
+.blockBody .headerAdm {
+  border-bottom: 1px solid #5a5a5a;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2vw 1vw;
+  position: relative;
+}
+
+.blockBody .headerAdm h2 {
+  color: black;
+  font-weight: 700;
+  font-size: 2.5vw;
+  margin-left: 1vw;
+}
+
+.blockBody .headerAdm .NewProject {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 4vw;
+  height: 7vh;
+  margin-left: auto;
+  margin-right: 1vw;
+}
+
+.blockBody .headerAdm .NewProject button {
+  border: none;
+  cursor: pointer;
+  background-color: green;
+  color: white;
+  width: 100%;
+  font-size: 3vw;
+  font-weight: 700;
+  line-height: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 1vw;
+}
+
+.blockBody .projetosContent {
+  width: 100%;
+  padding: 2vw;
+}
+
+.blockBody .projetosContent ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.blockBody .projetosContent ul li {
+  padding-bottom: 1vw;
+  padding-right: 1vw;
+}
+
+.blockBody .projetosContent ul li img {
+  width: 10vw;
+}
+
+.header {
+  width: 100%;
+  border-bottom: 1px solid black;
+  margin-bottom: 1vh;
+  padding: 1vw 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.header h1 {
+  color: black;
+  font-weight: 700;
+}
+
+.header button {
+  padding: 0.5vw 1vw;
+  border: none;
+  background-color: #FF4500;
+  color: #EDFAC9;
+  font-weight: 700;
+  border-radius: 1vw;
+  font-size: 1vw;
+  position: absolute;
+  right: 2vw;
+  top: 3vh;
+}
+
+#FormProject {
+  width: 100%;
+  padding: 1vh 2vw 10vh 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 5vh;
+  position: relative;
+}
+
+#FormProject .formBlock {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2vh 0;
+}
+
+#FormProject .formBlock label {
+  font-weight: 600;
+  color: black;
+}
+
+#FormProject .formBlock input, #FormProject .formBlock textarea {
+  border-radius: 1vw;
+  border: none;
+  margin: 0 0 0 0.5vw;
+  padding: 10px;
+}
+
+#FormProject .formBlock select {
+  padding: 5px 15px 5px 5px;
+  border: none;
+  margin-left: 1vw;
+}
+
+#FormProject .fichaTecnica {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#FormProject .fichaTecnica .pessoa {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 1vh 0;
+}
+
+#FormProject .fichaTecnica .PersonBlock {
+  width: 32%;
+}
+
+#FormProject .fichaTecnica p {
+  border: 2px solid red;
+  font-weight: 700;
+  margin: 0;
+  padding: 2vw;
+}
+
+#FormProject .QntyProject {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#FormProject .imgPrincBlock {
+  margin: 1vh 0 3vh 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#FormProject .imgPrincBlock .insideImgPrinc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#FormProject .imgPrincBlock .insideImgPrinc button {
+  height: 6vh;
+  border-radius: 1vw;
+  padding: 0.5vw 1vw;
+  border: 1px solid;
+  font-weight: 600;
+  margin: 0.5vh 0;
+}
+
+#FormProject .imgPrincBlock #imgPrinc {
+  margin: 0 2vw;
+  width: 25%;
+}
+
+#FormProject .gallery {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 5vh;
+  position: relative;
+}
+
+#FormProject .gallery #selectGallery {
+  height: 6vh;
+  border-radius: 1vw;
+  padding: 0.5vw 1vw;
+  border: 1px solid;
+  font-weight: 600;
+  margin: 0.5vh 1vw;
+}
+
+#FormProject .gallery #progressUpload {
+  position: absolute;
+  right: 5vw;
+  top: 4vh;
+  font-weight: 500;
+}
+
+#FormProject .gallery .galleryBlock {
+  width: 100%;
+  padding: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: white;
+  border-radius: 2vw;
+  margin-top: 2vh;
+}
+
+#FormProject .gallery .galleryBlock .imgBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1vw;
+  width: 20%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#FormProject .gallery .galleryBlock .imgBlock img {
+  width: 100%;
+  height: auto;
+}
+
+#FormProject #SaveBt {
+  position: absolute;
+  bottom: 0;
+  right: 2vw;
+  padding: 1vw;
+  font-weight: 700;
+  border: 0;
+  border-radius: 1vw;
+  background-color: green;
+  color: #EDFAC9;
 }
 
 /* Medium Device = 1200px */
@@ -234,6 +694,7 @@ header .scroll .blue a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  position: relative;
   width: 99vw;
   padding: 0.5vw;
 }
@@ -242,16 +703,13 @@ header .scroll .blue a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 15vw;
+  position: absolute;
+  width: 100% +10px;
   margin-top: 7vh;
 }
 
-.blockImgs .ColunaImgs a {
+.blockImgs .ColunaImgs .outimg {
+  height: 35vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -262,10 +720,24 @@ header .scroll .blue a {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  padding: 0 0 5vh 0;
+  margin: 0 0 3vh 0;
+  width: 15%;
 }
 
-.blockImgs .ColunaImgs a img {
+.blockImgs .ColunaImgs .outimg a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.blockImgs .ColunaImgs .outimg a img {
   position: relative;
   width: 90%;
   mix-blend-mode: darken;
@@ -273,31 +745,36 @@ header .scroll .blue a {
           filter: grayscale(100%);
 }
 
-.blockImgs .ColunaImgs a .first {
+.blockImgs .ColunaImgs .outimg a .first {
   z-index: 3;
-  top: 1.5vh;
+  top: 2vh;
   left: 0.8vw;
 }
 
-.blockImgs .ColunaImgs a .second {
+.blockImgs .ColunaImgs .outimg a .second {
   position: absolute;
 }
 
-.blockImgs .ColunaImgs a .third {
-  top: -1.5vh;
+.blockImgs .ColunaImgs .outimg a .third {
+  top: -2vh;
   left: 0;
   position: absolute;
 }
 
-.blockImgs .ColunaImgs a:hover img {
+.blockImgs .ColunaImgs .outimg a:hover img {
   mix-blend-mode: normal;
   -webkit-filter: grayscale(0%);
           filter: grayscale(0%);
 }
 
+.blockImgs .ColunaImgs .left {
+  margin-left: 68.5vw;
+}
+
 .blockImgs .Conteudo {
   width: 70vw;
   margin-top: 7vh;
+  margin-left: 14.5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

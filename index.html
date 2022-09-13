@@ -32,7 +32,7 @@
 
 	<script src="js/infiniteslidev2.min.js"></script>
     <script src="js/script.js"></script>
-
+    
 </head>
 
 
@@ -109,43 +109,15 @@
 
     <div class="blockImgs">
 
-        <div class="nav nav-pills ColunaImgs">
-            <a onclick="clickPhoto()" data-toggle="pill" href="#galeria01" aria-selected="false">
-                <img class="third" src="img/IMG_9447-Editar.jpg">
-                <img class="second" src="img/IMG_9447-Editar.jpg">
-                <img class="first" src="img/IMG_9447-Editar.jpg">
-            </a>
-            <a onclick="clickPhoto()" data-toggle="pill" href="#galeria03" aria-selected="false">
-                <img src="img/IMG_9278.jpg">
-            </a>
-            <a>
-                <img class="third" src="img/IMG_8902-Editar.jpg">
-                <img class="second" src="img/IMG_8902-Editar.jpg">
-                <img class="first" src="img/IMG_8902-Editar.jpg">
-            </a>
-            <a>
-                <img src="img/IMG_6056-Editar.jpg">
-            </a>
-            <a>
-                <img src="img/IMG_9447-Editar.jpg">
-            </a>
-            <a>
-                <img class="third" src="img/IMG_9278.jpg">
-                <img class="second" src="img/IMG_9278.jpg">
-                <img class="first" src="img/IMG_9278.jpg">
-            </a>
-            <a>
-                <img class="third" src="img/IMG_6056-Editar.jpg">
-                <img class="second" src="img/IMG_6056-Editar.jpg">
-                <img class="first" src="img/IMG_6056-Editar.jpg">
-            </a>
+        <div class="nav nav-pills ColunaImgs" id="ColunaImgs">
+            
         </div>
 
         <div class="Conteudo tab-content">
-            <div class="tab-pane fade" id="galeria01">
+            <div class="tab-pane fade" id="galeria1">
                 <h1 class="nomeProjeto">NOME PROJETO TESTE •</h1>
                 
-                    <div class="mainPhoto">
+                <div class="mainPhoto">
                     <img src="img/IMG_8902-Editar.jpg" alt="">
                 </div>
                 <div class="mainText">
@@ -183,7 +155,7 @@
                     <p>teste</p>
                 </div>
             </div>
-            <div class="tab-pane fade" id="galeria02">
+            <div class="tab-pane fade" id="galeria2">
                 <div class="mainPhoto">
                     <img src="img/IMG_9270.jpg" alt="">
                 </div>
@@ -221,7 +193,7 @@
                     <p>teste</p>
                 </div>
             </div>
-            <div class="tab-pane fade" id="galeria03">
+            <div class="tab-pane fade" id="galeria3">
                 <div class="mainPhoto">
                     <img src="img/IMG_9270.jpg" alt="">
                 </div>
@@ -343,76 +315,6 @@
 
                 </div>
             </div>
-            <div class="tab-pane fade" id="galeria04">
-                <!--
-                    <div class="mainPhoto">
-                    <img src="https://via.placeholder.com/450x650" alt="">
-                </div>
-                <div class="mainText">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum eu facilisis sed odio. Purus ut faucibus pulvinar elementum.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla at volutpat diam ut venenatis.</p>
-                </div>
-                <div class="galery">
-                    <div class="imgBlock">
-                        <img src="https://via.placeholder.com/250x500">
-                    </div>
-                    <div class="imgBlock">
-                        <img src="https://via.placeholder.com/300x400">
-                    </div>
-                    <div class="imgBlock">
-                        <img src="https://via.placeholder.com/450x300">
-                    </div>
-                    <div class="imgBlock">
-                        <img src="https://via.placeholder.com/150x550">
-                    </div>
-                    <div class="imgBlock">
-                        <img src="https://via.placeholder.com/350x200">
-                    </div>
-                    <div class="imgBlock">
-                        <img src="https://via.placeholder.com/400x250">
-                    </div>
-                    <div class="imgBlock">
-                        <img src="https://via.placeholder.com/250x400">
-                    </div>
-                    <div class="imgBlock">
-                        <img src="https://via.placeholder.com/350x200">
-                    </div>
-                </div>
-                -->
-                <div class="FichaTecnica">
-                    <p>teste</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="nav nav-pills ColunaImgs">
-            <a onclick="clickPhoto()" data-toggle="pill" href="#galeria02" aria-selected="false">
-                <img src="img/IMG_8902-Editar.jpg">
-            </a>
-            <a onclick="clickPhoto()" data-toggle="pill" href="#galeria04" aria-selected="false">
-                <img src="img/IMG_9278.jpg">
-            </a>
-            <a>
-                <img class="third" src="img/IMG_6056-Editar.jpg">
-                <img class="second" src="img/IMG_6056-Editar.jpg">
-                <img class="first" src="img/IMG_6056-Editar.jpg">
-            </a>
-            <a>
-                <img class="third" src="img/IMG_9447-Editar.jpg">
-                <img class="second" src="img/IMG_9447-Editar.jpg">
-                <img class="first" src="img/IMG_9447-Editar.jpg">
-            </a>
-            <a>
-                <img src="img/IMG_6056-Editar.jpg">
-            </a>
-            <a>
-                <img class="third" src="img/IMG_9278.jpg">
-                <img class="second" src="img/IMG_9278.jpg">
-                <img class="first" src="img/IMG_9278.jpg">
-            </a>
-            <a>
-                <img src="img/IMG_9447-Editar.jpg">
-            </a>
         </div>
 
     </div>
@@ -427,11 +329,14 @@
         </ul>
     </div>
 
-    <script type="module" src="js/firebase.js"></script>
     <script>
+        document.querySelector('.block_vetor').style=`left:${Math.floor(Math.random() * 64)}vw`;
         $('.carousel').carousel({
             interval: 500
         });
     </script>
+
+    <script type="module" src="../js/firebase-index.js"></script>
+
 </body>
 </html>

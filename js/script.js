@@ -3,7 +3,6 @@ const random = Math.floor(Math.random()* colorArray.length);
 
 window.onload = function(){
     document.body.style.background = `${colorArray[random]}`;
-    document.querySelector('.block_vetor').style=`left:${Math.floor(Math.random() * 64)}vw`;
 
     if(colorArray[random] == '#FF4500'){
         const texts = document.querySelectorAll('.marqueeText');

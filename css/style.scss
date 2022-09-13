@@ -1,4 +1,5 @@
 @import 'compiler/font-colors';
+
 *, *::after, *::before{
     margin: 0;
     padding: 0;
@@ -19,6 +20,11 @@ body{
 ::-webkit-scrollbar-track{background-color: $White;}
 ::-webkit-scrollbar{width: 0.75vw;}
 ::-webkit-scrollbar-thumb{background:$Black;}
+
+@import 'compiler/registro';
+@import 'compiler/login';
+@import 'compiler/admin';
+@import 'compiler/newProject';
 
 
 /* Medium Device = 1200px */
@@ -179,53 +185,64 @@ header{
     display: flex;
     position: relative;
     flex-direction: row;
+    position: relative;
     width: 99vw;
     padding: 0.5vw;
     .ColunaImgs{
         display: flex;
-        position: relative;
-        flex-direction: column;
-        width: 15vw;
+        position: absolute;
+        width: 100% +10px;
         margin-top: 7vh;
-        a{
+        .outimg{
+            height: 35vh;
             display: flex;
             align-items: center;
             justify-content: center;
             position: relative;
-            padding:0 0 5vh 0;
-            img{
+            margin:0 0 3vh 0;
+            width: 15%;
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 position: relative;
-                width: 90%;
-                mix-blend-mode: darken;
-                filter: grayscale(100%);
-                
-            }
-            .first{
-                z-index: 3;
-                top: 1.5vh;
-                left: 0.8vw;
-            }
-            .second{
-                position: absolute;
-            }
-            .third{
-                top: -1.5vh;
-                left: 0;
-                position: absolute;
-            }
-            &:hover{
                 img{
-                    mix-blend-mode: normal;
-                    filter: grayscale(0%);
-
+                    position: relative;
+                    width: 90%;
+                    mix-blend-mode: darken;
+                    filter: grayscale(100%);
+                    
+                }
+                .first{
+                    z-index: 3;
+                    top: 2vh;
+                    left: 0.8vw;
+                }
+                .second{
+                    position: absolute;
+                }
+                .third{
+                    top: -2vh;
+                    left: 0;
+                    position: absolute;
+                }
+                &:hover{
+                    img{
+                        mix-blend-mode: normal;
+                        filter: grayscale(0%);
+                    }
                 }
             }
-            
         }
+        .left{
+            margin-left: 68.5vw;
+        }
+        
     }
     .Conteudo{
         width: 70vw;
         margin-top: 7vh;
+        margin-left: 14.5vw;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;

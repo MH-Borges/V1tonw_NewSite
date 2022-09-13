@@ -1,0 +1,53 @@
+.formBody{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    form{
+        border-radius: 1vw;
+        border: 1px solid darkgray;
+        padding: 2.5vw;
+        width: 32vw;
+        background-color: #EDFAC9;
+        .form-field {
+            margin-bottom: 1vw;
+            label{
+                font-weight: 700;
+            }
+            span {
+                background: red;
+                color: white;
+                display: none;
+                padding: 0.5vw;
+                text-align: center;
+            } 
+        }
+        input,
+        button{
+            cursor: pointer;
+            padding: 10px;
+            width: -webkit-fill-available;
+            border: none;
+            border-radius: 1vw;
+        }
+        .confirm[disabled]{
+            border: 2px solid lightgray;
+            color: gray;
+        } 
+        .confirm {
+            margin-top: 1vw;
+            margin-left: 14vw;
+            width: 50%;
+            background: none;
+            border: 2px solid greenyellow;
+            color: green;
+            font-weight: 700;
+            border-radius: 1vw;
+            
+        }
+    }
+}
+
+
+

@@ -1,0 +1,152 @@
+.header{
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin-bottom: 1vh;
+    padding: 1vw 2vw;
+    display: flex;
+    position: relative;
+    h1{
+        color: black;
+        font-weight: 700;
+    }
+    button{
+        padding: 0.5vw 1vw;
+        border: none;
+        background-color: $Orange;
+        color: $White;
+        font-weight: 700;
+        border-radius: 1vw;
+        font-size: 1vw;
+        position: absolute;
+        right: 2vw;
+        top:3vh;
+    }
+}
+#FormProject{
+    width: 100%;
+    padding: 1vh 2vw 10vh 2vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 5vh;
+    position: relative;
+    .formBlock{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 2vh 0;
+        label{
+            font-weight: 600;
+            color: black;
+        }
+        input, textarea{
+            border-radius: 1vw;
+            border: none;
+            margin: 0 0 0 0.5vw;
+            padding: 10px;
+        }
+        select{
+            padding: 5px 15px 5px 5px;
+            border: none;
+            margin-left: 1vw;
+        }
+        
+    }
+    .fichaTecnica{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .pessoa{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            margin: 1vh 0;
+        }
+        .PersonBlock{
+            width: 32%;
+        }
+        p{
+            border: 2px solid red;
+            font-weight: 700;
+            margin: 0;
+            padding: 2vw; 
+        }
+    }
+    .QntyProject{
+        flex-direction: row;
+    }
+    .imgPrincBlock{
+        margin: 1vh 0 3vh 0;
+        flex-direction: row;
+        .insideImgPrinc{
+            display: flex;
+            flex-direction: column;
+            button{
+                height: 6vh;
+                border-radius: 1vw;
+                padding: 0.5vw 1vw;
+                border: 1px solid;
+                font-weight: 600;
+                margin: 0.5vh 0;
+            }
+        }
+        
+        #imgPrinc{
+            margin: 0 2vw;
+            width: 25%;
+            
+        }
+    }
+    .gallery{
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 5vh;
+        position: relative;
+        #selectGallery{
+            height: 6vh;
+            border-radius: 1vw;
+            padding: 0.5vw 1vw;
+            border: 1px solid;
+            font-weight: 600;
+            margin: 0.5vh 1vw;
+        }
+        #progressUpload{
+            position: absolute;
+            right: 5vw;
+            top: 4vh;
+            font-weight: 500;
+        }
+        .galleryBlock{
+            width: 100%;
+            padding: 1vw;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: white;
+            border-radius: 2vw;
+            margin-top:2vh;
+            .imgBlock{
+                display: flex;
+                padding: 1vw;
+                width: 20%;
+                align-items: center;
+                justify-content: center;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    #SaveBt{
+        position: absolute;
+        bottom: 0;
+        right: 2vw;
+        padding: 1vw;
+        font-weight: 700;
+        border: 0;
+        border-radius: 1vw;
+        background-color: green;
+        color: $White;
+    }
+}

@@ -1,0 +1,65 @@
+.formBody{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    form{
+        border-radius: 1vw;
+        border: 1px solid darkgray;
+        padding: 2.5vw;
+        width: 32vw;
+        background-color: #EDFAC9;
+        h2{
+            text-align: center;
+            margin-bottom: 2vh;
+        }
+        .form-field {
+            margin-bottom: 1vw;
+            label{
+                font-weight: 700;
+            }
+            span {
+                background: red;
+                color: white;
+                display: none;
+                padding: 0.5vw;
+                text-align: center;
+            } 
+        }
+        input,
+        button{
+            cursor: pointer;
+            padding: 10px;
+            width: -webkit-fill-available;
+            border: none;
+            border-radius: 1vw;
+        }
+        .entrar[disabled]{
+            border: 2px solid lightgray;
+            color: gray;
+            background: none;
+        } 
+        .entrar{
+            margin-top: 1vw;
+            background: green;
+            border: 2px solid green;
+            color: white;
+            font-weight: 700;
+            border-radius: 1vw;   
+        }
+        .recuperar{
+            color: black;
+            padding: 0;
+            width: 10vw;
+            margin-left: 65%;
+            background: none;
+            &:hover{
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+
+
